@@ -122,7 +122,7 @@ async def start_web_server():
     print("🌐 Web server started on port", os.getenv("PORT", 8080))
 
 # 🔁 Keep-alive (ป้องกันบอทหลับ)
-KEEP_ALIVE_URL = "https://bot-mr-production.up.railway.app"  # แก้ให้ตรงกับ Domain ของคุณ
+KEEP_ALIVE_URL = "https://mr-bot-mr-bot.up.railway.app"  # แก้ให้ตรงกับ Domain ของคุณ
 
 @tasks.loop(minutes=5)
 async def keep_alive():
